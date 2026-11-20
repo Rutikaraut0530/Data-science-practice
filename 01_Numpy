@@ -1,0 +1,139 @@
+# ==================================================
+# DATA SCIENCE LEARNING
+# TOPIC 01: NUMPY BASICS
+# ==================================================
+
+# NumPy is used for numerical computing and arrays.
+
+# 1. IMPORT NUMPY
+
+import numpy as np
+
+
+# 2. CREATING A NUMPY ARRAY
+
+numbers = np.array([10, 20, 30, 40, 50])
+
+print("NumPy Array:", numbers)
+
+
+# 3. CREATING AN ARRAY FROM A LIST
+
+marks = [85, 90, 78, 92, 88]
+
+marks_array = np.array(marks)
+
+print("Marks Array:", marks_array)
+
+
+# 4. CHECKING ARRAY DIMENSIONS
+
+one_d = np.array([10, 20, 30])
+
+two_d = np.array([[10, 20, 30],
+                  [40, 50, 60]])
+
+three_d = np.array([[[1, 2], [3, 4]],
+                    [[5, 6], [7, 8]]])
+
+print("1D Array:", one_d.ndim)
+print("2D Array:", two_d.ndim)
+print("3D Array:", three_d.ndim)
+
+
+# 5. CHECKING ARRAY SHAPE
+
+print("Array Shape:", two_d.shape)
+
+
+# 6. CHECKING TOTAL ELEMENTS
+
+print("Total Elements:", two_d.size)
+
+
+# 7. CHECKING DATA TYPE
+
+values = np.array([10, 20, 30, 40])
+
+print("Data Type:", values.dtype)
+
+
+# 8. CREATING ARRAYS WITH ZEROS
+
+zero_array = np.zeros(5)
+
+print("Zeros Array:", zero_array)
+
+
+# 9. CREATING ARRAYS WITH ONES
+
+one_array = np.ones(5)
+
+print("Ones Array:", one_array)
+
+
+# 10. CREATING AN ARRAY WITH A RANGE
+
+range_array = np.arange(1, 11)
+
+print("Range Array:", range_array)
+
+
+# 11. CREATING EVENLY SPACED VALUES
+
+spaced_array = np.linspace(1, 10, 5)
+
+print("Spaced Array:", spaced_array)
+
+
+# 12. ACCESSING ARRAY ELEMENTS
+
+numbers = np.array([10, 20, 30, 40, 50])
+
+print("First Element:", numbers[0])
+print("Third Element:", numbers[2])
+print("Last Element:", numbers[-1])
+
+
+# 13. ACCESSING 2D ARRAY ELEMENTS
+
+data = np.array([[10, 20, 30],
+                 [40, 50, 60]])
+
+print("Element:", data[0, 1])
+print("Element:", data[1, 2])
+
+
+# 14. ARRAY SLICING
+
+numbers = np.array([10, 20, 30, 40, 50])
+
+print("First Three:", numbers[0:3])
+print("Last Two:", numbers[3:5])
+
+
+# 15. CHANGING ARRAY DATA TYPE
+
+values = np.array([10, 20, 30])
+
+float_values = values.astype(float)
+
+print("Original Array:", values)
+print("Converted Array:", float_values)
+
+
+# 16. REAL-LIFE EXAMPLE: STUDENT MARKS
+
+student_marks = np.array([85, 90, 78, 92, 88])
+
+print("\nSTUDENT MARKS")
+print("Marks:", student_marks)
+print("Number of Subjects:", student_marks.size)
+print("Highest Marks:", np.max(student_marks))
+print("Lowest Marks:", np.min(student_marks))
+print("Average Marks:", np.mean(student_marks))
+
+
+# ==================================================
+# END OF NUMPY BASICS
+# ==================================================
